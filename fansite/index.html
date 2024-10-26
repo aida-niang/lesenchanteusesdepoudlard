@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <!-- Choix de l'encodage et ajustement du site pour une meilleure adaptabilité -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Les Enchanteuses de Poudlard</title>
+
+      <!-- Lien vers la feuille de style CSS -->
+      <link rel="stylesheet" href="css/index.css">
+
+      <!-- Lien pour importer la police "Charm" depuis Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+      <header>
+        <!-- Titre de la page -->
+        <h1>Les Enchanteuses de Poudlard</h1>
+
+        <section class="flex-header">
+          
+          <!-- Logo avec lien vers la page d'accueil commune -->
+          <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
+          
+          <!-- Checkbox va contrôler l'affichage du menu -->
+          <input type="checkbox" id="toggle-menu">
+
+          <!-- Label pour le menu déroulant -->
+          <label for="toggle-menu" class="bouton-deroulant">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <ul>
+              <li class="menu-nav"><a href="fansite1.html">Minerva McGonagall</a></li>
+              <li class="menu-nav"><a href="fansite2.html">Hermione Granger</a></li>
+              <li class="menu-nav"><a href="fansite3.html">Luna Lovegood</a></li>
+              <li class="menu-nav"><a href="mailto:les_enchanteuses_de_poudlard@laplateforme.io">Nous écrire</a></li>
+            </ul>
+          </nav>
+
+          <!-- Barre de recherche -->
+          <a><input type="search" placeholder="Rechercher..."></a>
+        </section>
+      </header>
+
+      <main>
+        <img src="assets/images/header_banner.jpg" alt="bannière" class="banner">
+
+        <section class="personnages">
+
+          <div class="grid-index">
+            <!-- Bloc 1 : -->
+            <div class="box-presentation">
+              <img src="assets/images/minerva_index.jpg" alt="Minerva McGonagall">
+              <a href="fansite1.html">Minerva McGonagall</a>
+            </div>
+
+            <!-- Bloc 2 : -->
+            <div class="box-presentation">
+              <img src="assets/images/hermione_index.jpg" alt="Hermione Granger">
+              <a href="fansite2.html">Hermione Granger</a>
+            </div>
+
+            <!-- Bloc 3 : -->
+            <div class="box-presentation">
+              <img src="assets/images/luna_index.jpg" alt="Luna Lovegood">
+              <a href="fansite3.html">Luna Lovegood</a>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <!-- Pied de page -->
+      <footer>
+        <!-- Logo avec lien vers la page d'accueil commune -->
+        <a href="index.html" class="logo-center-footer"><img src="assets/images/logo.png" alt="Logo"></a>
+        
+        <!-- Navigation dans le footer -->
+        <nav class="centrage-footer">
+          <ul class="nav-ul-footer">
+            <li class="menu-nav"><a href="fansite1.html">Minerva McGonagall</a></li>
+            <li class="menu-nav"><a href="fansite2.html">Hermione Granger</a></li>
+            <li class="menu-nav"><a href="fansite3.html">Luna Lovegood</a></li>
+            <li class="menu-nav"><a href="mailto:les_enchanteuses_de_poudlard@laplateforme.io">Nous écrire</a></li>
+          </ul>
+        </nav>
+
+        <!-- Liens vers d'autres sites sur Hermione dans le footer -->
+        <ul class="liens_sites">
+          <li><h4>Découvrez :</h4></li>
+          <li><a href="https://harrypotter.fandom.com/fr/wiki/Minerva_McGonagall">Minerva McGonagall</a></li>
+          <li><a href="https://harrypotter.fandom.com/fr/wiki/Hermione_Granger">Hermione Granger</a></li>
+          <li><a href="https://harrypotter.fandom.com/fr/wiki/Luna_Lovegood">Luna Lovegood</a></li>
+        </ul>
+
+        <!-- Liens vers réseaux sociaux d'Hermione dans le footer -->
+        <ul class="liens_reseaux">
+          <li><h4>Nous suivre ...</h4></li>
+          <li><a href="https://www.facebook.com/lesenchanteusesdepoudlard"><img src="assets/images/facebook.png" alt="Logo Facebook"></a></li>
+          <li><a href="https://x.com/lesenchanteusesdepoudlard"><img src="assets/images/twitter.png" alt="Logo X"></a></li>
+          <li><a href="https://instagram.com/lesenchanteusesdepoudlard"><img src="assets/images/instagram.png" alt="Logo Instagram"></a></li>
+        </ul>
+      </footer>
+
+    </body>
+</html>

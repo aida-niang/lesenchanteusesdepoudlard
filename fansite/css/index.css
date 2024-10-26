@@ -1,0 +1,218 @@
+body {
+    font-family: "Charm", serif; /* Choix de la police */
+    background-color: #2E2C2F; /* Couleur de fond sombre */
+    color: #fff; /* Texte blanc */
+    line-height: 1.6; /* Augmentation de l'espace entre les lignes */
+}
+
+.banner{
+    width: 100%;
+}
+
+header {
+    background-color: #BF9464; /* Couleur dorée (cravate d'Hermione) */
+    padding: 20px 0; /* Augmentation du padding pour plus d'espace */
+    text-align: center;
+    border-bottom: 5px solid #582332; /* Ajout d'une bordure solide pour séparer visuellement le header */
+}
+
+header h1 {
+    font-size: 2.5em; /* Augmentation de la taille du titre */
+    letter-spacing: 2px; /* Espace entre les lettres */
+}
+
+/* Utilisation de flexbox pour aligner le menu et la recherche */
+.flex-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Les éléments s'alignent au centre vertical du conteneur */
+    margin: 20px 5%; /* Ajout de marges pour équilibrer les éléments */
+}
+
+/* Style du menu déroulant au survol */
+nav ul li a:hover {
+    color: #BF9464; /* Changement de couleur au survol */
+}
+
+/* Bouton déroulant */
+.bouton-deroulant {
+    display: none; /* Caché en version ordinateur */
+    flex-direction: none;
+    cursor: pointer;
+    gap: 5px;
+}
+
+/* Style des lignes du bouton déroulant */
+.bouton-deroulant span {
+    background-color: #582332;
+    width: 30px;
+    height: 3px;
+    transition: 0.3s;
+}
+
+/* Toogle du menu déroulant */
+#toggle-menu{
+    display: none;
+}
+
+/* Liste des éléments du menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    gap: 20px; /* Ajout d'un espace entre les éléments */
+}
+
+/* Style des liens du menu - Partie 1 */
+nav ul li a {
+    color: #fff; /* Texte blanc pour masquer la couleur bleue des liens */
+    text-decoration: none;
+    padding: 10px 15px; /* Ajout d'espace autour des liens pour rendre cliquables plus facilement */
+}
+
+/* Style des liens du menu - Partie 2 */
+.menu-nav {
+    background-color: #582332; /* Couleur mauve (cravate d'Hermione) pour le fond du lien */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+/* Style de la barre de recherche */
+input[type="search"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #582332;
+    background-color: #fff;
+    font-size: 1em;
+    width: 200px;
+}
+
+/* Effet au clic sur la barre de recherche */
+input[type="search"]:focus {
+    width: 300px; /* Augmente la largeur lors de la saisie */
+    outline: none; /* Supprime la bordure par défaut en faveur du style sélectionné précédemment */
+}
+
+/* Section de présentation d'Hermione */
+.personnages {
+    background-color: #BF9464; /* Couleur dorée (cravate d'Hermione) */
+    padding: 40px 5%; /* Ajout de padding pour plus d'espace autour du contenu */
+    border-radius: 20px;
+    margin: 40px auto; /* Marge externe (espace au-dessus et en-dessous) */
+}
+
+/* Grid pour présenter : */
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes par défaut */
+    gap: 30px; /* Espace entre les colonnes */
+    padding: 20px 0; /* Ajout de padding autour */
+}
+
+/* Style de chaque bloc de présentation */
+.box-presentation {
+    background-color: #582332; /* Fond sombre */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Style des titres dans les blocs de présentation */
+.box-presentation a {
+    color: #BF9464; /* Couleur dorée pour le titre */
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* Style pour chaque image dans la section photos */
+.box-presentation img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Style du footer */
+footer {
+    background-color: #BF9464;
+    color: #2E2C2F;
+    padding: 40px 5%;
+    gap: 20px;
+    border-top: 5px solid #582332; /* Séparation du footer */
+}
+
+.nav-ul-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.liens_sites, .liens_reseaux {
+    list-style: none;
+    text-align: center;
+}
+
+.liens_sites li a {
+    color:#2E2C2F;
+}
+
+.logo-center-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-index {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes par défaut */
+    gap: 30px; /* Espace entre les colonnes */
+    padding: 20px 0; /* Ajout de padding autour */
+}
+
+/* Responsive pour mobiles */
+@media only screen and (max-width: 767px){
+    .grid-index, footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 1 colonne pour les petits écrans */
+    }
+    
+    /* Ajustement du header sur mobile */
+    .flex-header {
+        flex-direction: column;
+        gap: 20px; /* Espace entre les éléments qui sont les uns sur les autres */
+    }
+
+    /* Barre de recherche élargie sur mobile */
+    input[type="search"] {
+        width: 100%;
+    }
+
+    /* Afficher le bouton déroulant */
+    .bouton-deroulant {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    /* Affiche les liens quand le menu est activé via le checkbox */
+    #toggle-menu:checked + label + .menu ul {
+        display: flex;
+        flex-direction: column;
+        top: 40px;
+        width: 200px;
+        padding: 10px;
+    }
+
+    /* Cache les liens de navigation par défaut en version mobile */
+    .menu ul {
+        display: none;
+    }
+}
