@@ -1,7 +1,6 @@
 body {
     font-family: "Charm", serif; /* Choix de la police */
-    background-color: #2E2C2F; /* Couleur de fond sombre */
-    color: #fff; /* Texte blanc */
+    background-color: #fff; /* Couleur de fond sombre */
     line-height: 1.6; /* Augmentation de l'espace entre les lignes */
 }
 
@@ -10,14 +9,14 @@ body {
 }
 
 header {
-    background-color: #BF9464; /* Couleur dorée (cravate d'Hermione) */
-    padding: 20px 0; /* Augmentation du padding pour plus d'espace */
+    background-color: #000;
+    padding: 5px 0; /* Augmentation du padding pour plus d'espace */
     text-align: center;
-    border-bottom: 5px solid #582332; /* Ajout d'une bordure solide pour séparer visuellement le header */
+    border-bottom: 5px solid #BF9464; /* Ajout d'une bordure solide pour séparer visuellement le header */
 }
 
 header h1 {
-    font-size: 2.5em; /* Augmentation de la taille du titre */
+    font-size:20px; /* Augmentation de la taille du titre */
     letter-spacing: 2px; /* Espace entre les lettres */
 }
 
@@ -26,7 +25,7 @@ header h1 {
     display: flex;
     justify-content: space-around;
     align-items: center; /* Les éléments s'alignent au centre vertical du conteneur */
-    margin: 20px 5%; /* Ajout de marges pour équilibrer les éléments */
+    margin: 5px 5%; /* Ajout de marges pour équilibrer les éléments */
 }
 
 /* Style du menu déroulant au survol */
@@ -44,7 +43,7 @@ nav ul li a:hover {
 
 /* Style des lignes du bouton déroulant */
 .bouton-deroulant span {
-    background-color: #582332;
+    background-color: #BF9464;
     width: 30px;
     height: 3px;
     transition: 0.3s;
@@ -69,19 +68,15 @@ nav ul li a {
     color: #fff; /* Texte blanc pour masquer la couleur bleue des liens */
     text-decoration: none;
     padding: 10px 15px; /* Ajout d'espace autour des liens pour rendre cliquables plus facilement */
+    font-size: 20px;
 }
 
-/* Style des liens du menu - Partie 2 */
-.menu-nav {
-    background-color: #582332; /* Couleur mauve (cravate d'Hermione) pour le fond du lien */
-    border-radius: 8px; /* Coins arrondis */
-}
 
 /* Style de la barre de recherche */
 input[type="search"] {
     padding: 10px;
     border-radius: 20px;
-    border: 2px solid #582332;
+    border: 2px solid #BF9464;
     background-color: #fff;
     font-size: 1em;
     width: 200px;
@@ -95,7 +90,7 @@ input[type="search"]:focus {
 
 /* Section de présentation d'Hermione */
 .personnages {
-    background-color: #BF9464; /* Couleur dorée (cravate d'Hermione) */
+    background-color: #fff; /* Couleur dorée (cravate d'Hermione) */
     padding: 40px 5%; /* Ajout de padding pour plus d'espace autour du contenu */
     border-radius: 20px;
     margin: 40px auto; /* Marge externe (espace au-dessus et en-dessous) */
@@ -110,39 +105,54 @@ footer {
 }
 
 /* Style de chaque bloc de présentation */
-.box-presentation {
+.box-presentation-hermione {
     background-color: #582332; /* Fond sombre */
     padding: 20px;
     border-radius: 15px;
     text-align: center;
 }
 
+.box-presentation-luna {
+    background-color: #58185f; /* Fond sombre */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.box-presentation-minerva {
+    background-color: #2c5d3f; /* Fond sombre */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
 /* Style des titres dans les blocs de présentation */
-.box-presentation a {
+.box-presentation-hermione a, .box-presentation-minerva a, .box-presentation-luna a  {
     color: #BF9464; /* Couleur dorée pour le titre */
     margin-bottom: 10px;
     font-size: 1.5em;
 }
 
 /* Style pour chaque image dans la section photos */
-.box-presentation img {
+.box-presentation-hermione img, .box-presentation-luna img, .box-presentation-minerva img {
     width: 100%;
     border-radius: 15px;
 }
 
+
 /* Style du footer */
 footer {
-    background-color: #BF9464;
-    color: #2E2C2F;
+    background-color: #000;
+    color: #fff;
     padding: 40px 5%;
     gap: 20px;
-    border-top: 5px solid #582332; /* Séparation du footer */
+    border-top: 5px solid #BF9464; /* Séparation du footer */
 }
 
 .nav-ul-footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    text-align: center;
+    text-align: left;
 }
 
 footer a {
@@ -151,17 +161,18 @@ footer a {
 }
 
 footer h4 {
-    font-size: 1.5em;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .liens_sites, .liens_reseaux {
     list-style: none;
     text-align: center;
+    text-align: left;
 }
 
 .liens_sites li a {
-    color:#2E2C2F;
+    color:#fff;
 }
 
 .logo-center-footer {
