@@ -1,0 +1,256 @@
+/* .site-container {  /* Défini une taille maximale de la page
+    max-width: 100em;
+    margin: 0 auto;
+    padding: 0px;
+} */
+
+body {
+    background-color: #46376E;
+    padding: 0px;
+    
+}
+
+header {
+    /*Ces propriétés agissent sur les éléments du header= logo/barre de nav/barre de recherche*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7B64D5
+}
+
+/*Barre de navigation*/
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #00e55c; */
+    padding: 10px;
+    font-size: 100%;
+}
+
+.header-items { /* Items de navigation*/
+    display: flex;
+    justify-content: space-around; /* Espace entre items de navigation et barre de recherche*/
+    align-items: center;
+    list-style: none; /*Enlève les points devant les items*/
+    padding: 20px;
+}
+
+
+a { /*agit sur le texte des items*/
+    margin-left: 30px; /*marge pour écarter les éléments entre eux*/
+    text-decoration: none; /*Enlève le souligné*/
+    /* background-color: aqua; */
+    color: #000;
+    font-size: 100%;
+}
+
+
+/* Permet l'action de cliquer sur le burgerbutton et 
+faire apparaitre le menu avec liens de navigation Accueil,Blog,Apparitions */
+.toggle-menu {
+    display: none; /* Cacher la case à cocher */
+}
+
+.hamburger-button {
+    display: none; /* Cacher le bouton hamburger par défaut */
+    cursor: pointer;  /* Indiquer que cet élément est cliquable *//*???COMMENT MODIFIER LE STYLE DE LA MAIN??? */
+    /* flex-direction: column; */
+}
+
+/* les 3 lignes qui créent le menu burger */
+.line {
+    height: 6px; /* Épaisseur des lignes */
+    background-color: white; /* Couleur des lignes */
+    margin: 6px; /* Espacement entre les lignes */
+    width: 100%; /* Longueur des lignes */
+}
+
+/*styles barre de recherche*/
+input {
+    height: 40%;
+    border-radius: 10px;
+    align-self: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-family: "Charm", serif
+}
+
+.gif-luna {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "Charm", cursive;
+    font-weight: 900;
+    font-style: normal;
+}
+
+h2 {
+        font-family: "Charm", serif;
+        font-weight: 500px; /*Gérer la fonction GRAS*/
+        font-style:oblique; /*italique,normal... */
+}
+
+
+/* Essai avec GRID
+.container {
+    background-color: aqua;
+    display: grid;
+    align-items: center; /* Centre le conteneur
+    grid-template-columns: repeat(4,1fr);
+    margin: 10px;
+} 
+*/
+
+
+/* Essai avec FLEX*/
+.container { /*la boite présentation*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+    padding: 20px; /* Espacement à l'intérieur */
+    margin: 30px;  /*Espacement à l'extérieur du container*/
+}
+
+
+.bloc-presentation { /*Concerne les éléments à l'intérieur du bloc*/
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement*/
+    align-items: center; /*Centre les éléments horizontalement */
+    flex-wrap: wrap; /* Ajuste les sections si l'espace est insuffisant*/
+    /* background-color: #a97c38; */
+    width: 50%;
+    height: auto;
+    border-radius: 8px; /* Coins arrondis */
+    margin: 10px 0; /* Marge entre les blocs */
+}
+
+/* Styles du texte dans les blocs*/
+.bloc-presentation p {
+    padding: 20px;
+    color: #000000;
+}
+
+/* Styles des images dans les blocs */
+.bloc-presentation img {
+    padding: 20px;
+    max-width: 100%; /* L'image s'adapte à la largeur du bloc */
+    border-radius: 30px; /* Coins arrondis */
+}
+
+/* Styles des titres dans les blocs */
+.bloc-presentation h2 {
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+/* Style du FOOTER NAV*/
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #7B64D5;
+    align-items: center;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none; /*Enlève les points devant les items*/
+}
+
+.liens-externes {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.reseaux-sociaux {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Media queries indiquant les modifications de style 
+pour les smartphones */
+@media only screen and (max-width: 767px) {
+
+/* Barre de navigation format mobile */
+.header-nav ul { /*contenant des items nav*/
+    display: none;  /* Cacher le menu "ordi" sur mobile et intéragir avec le bouton pour faire apparaitre le menu*/
+    flex-direction: column;
+    background-color: #46376E;
+    border-radius: 5%;
+    position: absolute;
+    width: 30%; /*largeur du contenant*/
+    margin: 0%; /*permet d'intéragir sur la position du menu par rapport au hamburgerbutton*/
+    }
+
+.header-nav li {
+    margin: 10px; /*marge autour des items de nav*/
+    padding: 1%;
+}
+
+/*togglemenu+ 3lines = burger button*/
+.hamburger-button {
+    /* background-color: #7B64D5; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+}
+
+.toggle-menu:checked + .hamburger-button + .header-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8.5%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+}
+
+/*Ecran ordis*/
+@media only screen and (min-width: 1600px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*Tablettes*/
+@media only screen and (min-width:768px) and (max-width:1599px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
