@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minerva McGonagal</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="icon" href="Images /logo.ico" type="image/x-icon">
+    <!-- Import Police -->
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="site-container">
+    <header>
+        <h1> Bienvenue dans l'univers de Minerva McGonagal</h1>
+    </header>
+        <nav class="nav-header">
+            <!-- Logo -->
+            <a href="index.html">
+            <li><img src="Images /logo.png" href alt="logo Les Enchanteuses de Poudlard"></li>
+            </a>
+             <!-- Le checkbox qui contrôle l'affichage du menu -->
+        <input type="checkbox" id="toggle-menu">
+
+        <!-- Label pour le bouton hamburger -->
+        <label for="toggle-menu" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+            <!-- Menu -->
+            <nav class="menu">
+            <ul>
+            <li><a href="index.html">Accueil</a></li>
+
+             <!-- Menu déroulant pour Minerva McGonagall -->
+            <li class="dropdown active" >
+            <a href="fansite1.html">Minerva McGonagall</a>
+                <ul class="dropdown-content">
+                    <li><a href="#apropos">A propos</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                </ul>
+            </li>
+             </li>
+            <li><a href="apparitions_fansite1.html">Apparitions</a></li>
+            <li><a href="Blog_fansite1.html">Blog</a></li>
+            <li><a href="contacts_fansite1.html">Nous contacter</a></li>
+            </ul>
+            </nav>
+            
+            <!-- Formulaire de recherche -->
+            <form class="search-form">
+            <input type="text" placeholder="Recherche..." name="search">
+            <button type="submit">Chercher</button>
+            </form>
+            </nav>
+
+<main>
+<!-- Bannière -->
+<section class="banner">
+    <img src="Images /banner.jpg" href alt="logo Les Enchanteuses de Poudlard">
+</section>
+
+<main>
+    <section class="contact-form">
+        <h1>Contactez-nous</h1>
+    
+        <form action="#" method="post">
+            <!-- Civilité -->
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite" required>
+                <option value="">--Sélectionnez--</option>
+                <option value="Monsieur">Monsieur</option>
+                <option value="Madame">Madame</option>
+                <option value="Mademoiselle">Mademoiselle</option>
+            </select>
+    
+            <!-- Nom et Prénom -->
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+    
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+    
+            <!-- Adresse postale -->
+            <label for="adresse">Adresse postale :</label>
+            <input type="text" id="adresse" name="adresse" required>
+    
+            <!-- Checkbox Politique de confidentialité -->
+            <div class="checkbox">
+                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                <label for="confidentialite">J'accepte la <a href="#">politique de confidentialité</a> de l'entreprise</label>
+            </div>
+    
+            <!-- Bouton de validation -->
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>    
+    
+</main>
+
+    <footer>
+         <!-- Menu -->
+         <nav class="nav-footer">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="Images /logo.png" href alt="logo Les Enchanteuses de Poudlard">
+                </a>
+            <ul>
+                 <!-- Menu -->
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="fansite1.html">Minerva McGonagal</a></li>
+                <li><a href="apparitions_fansite1.html">Apparitions</a></li>
+                <li><a href="Blog_fansite1.html">Blog</a></li>
+                <li><a href="contacts_fansite1.html">Nous contacter</a></li>
+                </ul>
+                
+         <!-- Lien Externe -->
+         <div class="lien">
+            <ul>
+                <li><h3>Découvrez</h3></li>
+                <li><a href="https://harrypotter.fandom.com/fr/wiki/">Harry Potter sur Fandom</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Harry_Potter_(série_de_films)/">Harry Potter sur wikipedia </a></li>
+                <li><a href="https://www.canalplus.com/saga-harry-potter/h/creplay-them-cine-harry-potter">Harry Potter le saga</a></li>
+            </ul>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="reseaux">
+            <ul>
+                <li><h3>Nous suivre ... </h3></li>
+                <li>
+            <a href="https://www.facebook.com/lesenchanteusesdepoudlard"> <img src="Images /facebook.png" href alt="logo Les Enchanteuses de Poudlard"></a>
+            <a href="https://www.x.com/lesenchanteusesdepoulard"><img src="Images /twitter.png" href alt="logo Les Enchanteuses de Poudlard"></a>
+            <a href="https://www.instagram.com/lesenchanteusesdepoudlard"><img src="Images /instagram.png" href alt="logo Les Enchanteuses de Poudlard"></a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+    <p>&copy; 2024 Les Enchanteuses de Poudlard. Tous droits réservés.</p>
+    </footer>
+</div>
+</body>
+</html>

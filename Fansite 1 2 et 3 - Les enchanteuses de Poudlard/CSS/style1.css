@@ -1,0 +1,582 @@
+/* Index */
+
+
+
+/* Minerva */
+/* Toutes les pages */
+html {
+    background-color: white; /* couleur pour toutes les pages */
+}
+
+/* Conteneur global pour limiter la taille du site et le centrer */
+.site-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Corps du site */
+body {
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Style des titres */
+h1 {
+    font-family: "Charm", cursive;
+    font-size: 200%;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+}
+
+h {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 20px;
+    color: #2c5d3f;
+}
+
+h {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: justify;
+    font-weight: normal;
+}
+
+h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: #333;
+    text-align: justify;
+    font-weight: normal; /* pour enlever le gras */
+    line-height: 2;
+}
+
+
+/* Entête du site */
+header {
+    background-color: #2c5d3f;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Section avec logo,  menu et barre de recherche */
+nav {
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 20px 0px 20px;
+
+}
+
+/* Menu de navigation horizontale */
+ul {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Style des liens par défaut */
+ul a { 
+    color: #333;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 120%;
+    transition: color 0.3s;
+}
+
+/* Style des liens lors du survol */
+ul a:hover {
+    color: #2c5d3f;
+    text-shadow: 2px 2px 2px #333;
+    text-decoration: none;
+}
+
+/* Ajoutez une ligne sous l'élément actif */
+nav ul li.active a {
+    border-bottom: 2px solid #2c5d3f; /* Ajoute une bordure en bas pour indiquer la page active */
+    padding-bottom: 5px; /* Crée un peu d'espace entre le texte et la bordure */
+}
+
+/* Menu déroulant */
+nav ul li {
+    position: relative; /* Nécessaire pour positionner le contenu déroulant */
+}
+
+/* Cache le sous-menu par défaut */
+nav ul .dropdown-content {
+    display: none;
+    position: absolute; /* Permet au sous-menu de s'afficher sous le parent */
+    background-color: #2c5d3f;
+    min-width: 200px;
+    z-index: 3;
+    top: 100%; /* Positionne le sous-menu en dessous du parent */
+    left: 0;
+}
+
+nav ul .dropdown-content li {
+    display: block;
+}
+
+/* Style des liens dans le sous-menu */
+nav ul .dropdown-content li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change la couleur au survol dans le sous-menu */
+nav ul .dropdown-content li a:hover {
+    text-decoration: underline;
+}
+
+/* Affiche le sous-menu lorsqu'on survole le parent */
+nav ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Formulaire de recherche */
+.search-form {
+    display: flex; 
+    font-size: 12px;
+}
+
+/* Champ de recherche */
+.search-form input[type="text"] {
+    padding: 2px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    height: 30px;
+}
+
+/* Bouton de recherche */
+.search-form button {
+    background-color: #2c5d3f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Bouton de recherche lors du survol*/
+.search-form button:hover {
+    background-color: #2c5d3f;
+}
+
+/* Banner */
+.banner {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5%;
+}
+
+/* Origines et Contexte */
+.contexte {
+    display: flex;
+    gap: 10px; /* Espace entre les images */
+    align-items: center;
+  
+}
+
+.contexte img {
+    width: 800px;
+    height:auto;
+    object-fit: cover; /* Remplit la cellule sans déformation */
+    border-radius: 10px; /* Arrondit les coins de la bordure (optionnel) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+/* Styles pour la section "caractere" */
+.caractere {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Deux colonnes de taille égale */
+    gap: 20px; /* Espace entre les colonnes */
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.caractere .bloc {
+    background-color: #2c5d3f;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour les blocs */
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Espace entre les images */
+ }
+
+.videos iframe {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Remplit la cellule sans déformation */
+    border-radius: 10px; /* Arrondit les coins de la bordure (optionnel) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+/* Photos */
+.photos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mosaic-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Divise en 6 colonnes */
+    grid-auto-rows: 200px; /* Taille par défaut des lignes */
+    gap: 10px;
+}
+
+.grid-item {
+    border: 5px solid #2c5d3f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tailles différentes des items */
+.large {
+    grid-column: span 3; /* Prend 3 colonnes */
+    grid-row: span 2;    /* Prend 2 lignes */
+}
+
+.medium {
+    grid-column: span 2; /* Prend 2 colonnes */
+    grid-row: span 1;    /* Prend 1 ligne */
+}
+
+.small {
+    grid-column: span 1; /* Prend 1 colonne */
+    grid-row: span 1;    /* Prend 1 ligne */
+}
+
+/* Footer */
+footer {
+    background-color: #2c5d3f;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+/* Section avec logo,  menu, liens et réseaux sociaux */
+.nav-footer {
+    display: flex;
+    justify-content:space-between; 
+    align-items:baseline;
+}
+
+/* Menu de navigation verticale */
+.nav-footer a {
+    font-size: 18px;
+} 
+
+.nav-footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+
+/* Style des liens par défaut */
+.nav-footer ul a { 
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+/* Style des liens lors du survol */
+.nav-footer ul a:hover {
+    text-decoration:underline;
+}
+  
+
+.lien a {
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* contacts */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #2c5d3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2c5d3f;
+}
+
+a {
+    color: #2c5d3f;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styles pour le hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger span {
+    background-color: #2c5d3f;
+    width: 30px;
+    height: 3px;
+    transition: 0.3s;
+}
+
+/* Cache le checkbox */
+#toggle-menu {
+    display: none;
+}
+
+/* Affichage mobile */
+@media screen and (max-width: 767px) {
+    
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 150px; /* Ajustez ici pour placer sous le hamburger */
+        right: 5px; /* Aligne le menu avec le bord gauche */
+        width: 100%; /* Le menu prendra toute la largeur sous le hamburger */
+        text-align: center; /* Centrer les liens dans le menu */
+        padding: 20px;
+        border-radius: 0 0 8px 8px; /* Arrondir les coins inférieurs */
+    }    
+
+    /* Affiche le bouton hamburger */
+    .hamburger {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    /* Affiche les liens quand le menu est activé via le checkbox */
+    #toggle-menu:checked + label + .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+        padding: 10px;
+    }
+
+    /* Cache les liens de navigation par défaut en version mobile */
+    .menu ul {
+        display: none;
+        z-index: 10; /* Met le menu au-dessus de la bannière */
+        background-color:#fff ;
+    }
+
+ /* Cache le menu déroulant */
+    .dropdown {
+        display:none;
+    }
+
+/* Cache la bannière */
+    .banner {
+        display:none;
+    }
+
+.contexte {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.caractere {
+        gap: 10px; /* Espace entre les colonnes */
+        padding: 10px;
+    }
+    
+.caractere .bloc {
+   font-size: 10px;
+   margin-top: 10px;
+    
+    }
+
+.nav-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* une colonne */
+    }
+
+.mosaic-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Divise en 6 colonnes */
+    }
+
+}
+
+/* Affichage Tablette */
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+    
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 150px; /* Ajustez ici pour placer sous le hamburger */
+        right: 5px; /* Aligne le menu avec le bord gauche */
+        width: 100%; /* Le menu prendra toute la largeur sous le hamburger */
+        text-align: center; /* Centrer les liens dans le menu */
+        padding: 20px;
+        border-radius: 0 0 8px 8px; /* Arrondir les coins inférieurs */
+    }    
+
+    /* Affiche le bouton hamburger */
+    .hamburger {
+        display: flex;
+        margin-left: 10px;
+    }
+
+    /* Affiche les liens quand le menu est activé via le checkbox */
+    #toggle-menu:checked + label + .menu ul {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 20px;
+        padding: 10px;
+    }
+
+    /* Cache les liens de navigation par défaut en version mobile */
+    .menu ul {
+        display: none;
+        z-index: 10; /* Met le menu au-dessus de la bannière */
+        background-color:#fff ;
+    }
+
+ /* Cache le menu déroulant */
+    .dropdown {
+        display:none;
+    }
+
+/* Cache la bannière */
+    .banner {
+        display:none;
+    }
+
+/* .contexte {
+    display: flex;
+    flex-wrap: wrap;
+    } */
+
+.caractere {
+        gap: 10px; /* Espace entre les colonnes */
+        padding: 10px;
+    }
+    
+.caractere .bloc {
+   font-size: 10px;
+   margin-top: 10px;
+    
+    }
+
+.nav-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* une colonne */
+    }
+
+.reseaux {
+    display: flex;
+    justify-content:space-between;
+}
+
+.mosaic-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Divise en 6 colonnes */
+    }
+
+}
+
